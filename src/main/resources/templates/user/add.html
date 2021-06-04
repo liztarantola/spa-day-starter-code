@@ -15,14 +15,17 @@
     </label>
 
     <label>Password:
-        <input type="password" name="password" th:value="${password}">
+        <input type="password" name="password">
     </label>
 
     <label>Verify Password:
         <input type = 'password' name = 'verify'>
     </label>
 
-        <input type="submit" value="Sign Up" >
+    <p th:text ="${error}"></p>
+
+    <input type="submit" value="Sign Up" >
+
 </form>
 
 </body>
